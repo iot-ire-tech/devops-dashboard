@@ -23,9 +23,9 @@
 
 	<br>	
 	<br>	
-	<div class="w3-bar w3-blue">
+ 	<div class="w3-bar w3-blue">
 	  <button class="w3-bar-item w3-button" onclick="openTab('MirocService')">MirocService</button>
-	  <button class="w3-bar-item w3-button" onclick="openTab('OS')">OS</button>
+	  <button class="w3-bar-item w3-button" onclick="openTab('Infrastructure')">Infrastructure</button>
 	  <button class="w3-bar-item w3-button" onclick="openTab('Logs')">Logs</button>
 	</div>
 
@@ -67,9 +67,9 @@
 	<br><button id="btnUpdate" class="w3-btn w3-padding-small w3-black w3-right "  tabindex="" >Update Now</button> 
 	</div>
 
-	<div id="OS" class="w3-container dash" style="display:none">
-	  <h2>Hosts</h2>
-	  <p>Host kpis.</p> 
+	<div id="Infrastructure" class="w3-container dash" style="display:none">
+	  <h2>Hosts Information</h2>
+	  <p>The current state of infrastructure services are follows</p>
 		<div class="w3-row">
 				<div class="w3-col w3-container m6 l6 ">
 					<div class="w3-panel w3-padding-16 w3-orange">
@@ -88,11 +88,31 @@
 	</div>
 
 	<div id="Logs" class="w3-container dash" style="display:none">
-	  <h2>Logs</h2>
-	  <p>critial errors</p>
+ 		<p>The current state of logs are as follows</p>
+		<div class="w3-row">
+				<div class="w3-col w3-container m6 l6 ">
+					<div class="w3-panel w3-padding-16 w3-orange">
+						<p>CPU: F</p>
+						<p>Status : Red</p>
+					</div>
+				</div>
+				<div class="w3-col w3-container m6 l6 ">
+					<div class="w3-panel w3-padding-16 w3-orange">
+						<p>Disk: G</p>
+						<p>Status : Green</p>
+					</div>
+				</div>
+		</div>			  
 	<br><button id="btnUpdate" class="w3-btn w3-padding-small w3-black w3-right "  tabindex="" >Update Now</button> 
 	</div>
 				
+		
+		
+		
+		
+		
+		
+		
 	
 	<div class="w3-container w3-blue">
 		<h5>AIG Devops</h5>
