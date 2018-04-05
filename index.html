@@ -1,153 +1,120 @@
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>AIG - Dashboard</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-		<script src="dashboard.js"></script>
-		<script src="queryIt.js"></script>
-		
-
-	</head>
-	<body>
-	
-	<div class="w3-container content"> 
-		<div class="w3-container w3-blue w3-center">
-			<h1>AIG Devops</h1> 
-			<h3>DashBoard PoC</h3>
-		</div>
-		<span id="processingMessage"></span>
-
-	<br>	
-	<br>	
- 	<div class="w3-bar w3-blue">
-	  <button class="w3-bar-item w3-button" onclick="openTab('MirocService')">MirocService</button>
-	  <button class="w3-bar-item w3-button" onclick="openTab('Infrastructure')">Infrastructure</button>
-	  <button class="w3-bar-item w3-button" onclick="openTab('Logs')">System Logs</button>
-	</div>
-
-		
-		
-	<div id="MirocService" class="w3-container dash">
-	  <h2>Applications Health Points</h2>
-	  <p>The current state of services are as follows</p>
-
-<!-- 2 Status/Row -->		
-	<div class="w3-row">
-  		<div class="w3-col w3-container m6 l6 ">
-			<div class="w3-panel w3-padding-16 w3-orange">
-				<p>Service: A</p>
-				<p>Status : Red</p>
-			</div>
-  		</div>
-  		<div class="w3-col w3-container m6 l6 ">
-			<div class="w3-panel w3-padding-16 w3-orange">
-				<p>Service: B</p>
-				<p>Status : Red</p>
-			</div>
-  		</div>
-	</div>
-	<div class="w3-row">
-  		<div class="w3-col w3-container m6 l6 ">
-			<div class="w3-panel w3-padding-16 w3-orange">
-				<p>Service: C</p>
-				<p>Status : Red</p>
-			</div>
-  		</div>
-  		<div class="w3-col w3-container m6 l6">
-			<div class="w3-panel w3-padding-16 w3-orange">
-				<p>Service: D</p>
-				<p>Status : Red</p>
-			</div>
-  		</div>
-	</div>
-	<br>
-	<button class="btnUpdate" class="w3-btn w3-padding-small w3-blue w3-right "  tabindex="" >Update Status</button> 
-	
-
-	</div>
-		
-		
-
-	<div id="Infrastructure" class="w3-container dash" style="display:none">
-	  <h2>Hosts Information</h2>
-	  <p>The current state of infrastructure services are follows</p>
-		<div class="w3-row">
-				<div class="w3-col w3-container m6 l6 ">
-					<div class="w3-panel w3-padding-16 w3-orange">
-						<p>CPU: F</p>
-						<p>Status : Red</p>
-					</div>
-				</div>
-				<div class="w3-col w3-container m6 l6 ">
-					<div class="w3-panel w3-padding-16 w3-orange">
-						<p>Disk: G</p>
-						<p>Status : Green</p>
-					</div>
-				</div>
-		</div>		
-		<br>
-		<button class="btnUpdate" class="w3-btn w3-padding-small w3-blue w3-right "  tabindex="" >Update Status</button> 
-	
-	</div>
-
-		
-		
-	<div id="Logs" class="w3-container dash" style="display:none">
-	  <h2>Logging Information</h2>
-	  <p>The current state of logs are follows</p>
-		<div class="w3-row">
-				<div class="w3-col w3-container m6 l6 ">
-					<div class="w3-panel w3-padding-16 w3-orange">
-						<p>Jenkins</p>
-						<p>Status : Red</p>
-					</div>
-				</div>
-				<div class="w3-col w3-container m6 l6 ">
-					<div class="w3-panel w3-padding-16 w3-orange">
-						<p>Application Server: MicroService A</p>
-						<p>Status : Green</p>
-					</div>
-				</div>
-		</div>		
-		<br>
-		<button class="btnUpdate" class="w3-btn w3-padding-small w3-blue w3-right "  tabindex="" >Update Status</button> 
-		
-
-	</div>		
-
-				
-	<br>
-	<br>
-	<br>
-		
-		
-		
-		
-		
-		
-	
-	<div class="w3-container w3-blue">
-		<h5>AIG Devops</h5>
-		<p>For support, or information on other services, please contact us on ..... </p>
-	</div>
-			
-</div>
-			
-		
-<script>
-function openTab(cityName) {
-    var i;
-    var x = document.getElementsByClassName("dash");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    document.getElementById(cityName).style.display = "block";  
-}
-</script>
-		
-	</body>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>AIG - Dashboard</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="dashboard.js"></script>
+      <script src="queryIt.js"></script>
+   </head>
+   <body>
+      <div class="w3-container content">
+         <div class="w3-container w3-blue w3-center">
+            <h1>AIG Devops</h1>
+            <h3>DashBoard PoC</h3>
+         </div>
+         <span id="processingMessage"></span>
+         <br>	
+         <br>	
+         <div class="w3-bar w3-blue">
+            <button class="w3-bar-item w3-button" onclick="openTab('MirocService')">MirocService</button>
+            <button class="w3-bar-item w3-button" onclick="openTab('Infrastructure')">Infrastructure</button>
+            <button class="w3-bar-item w3-button" onclick="openTab('Logs')">System Logs</button>
+         </div>
+         <div id="MirocService" class="w3-container dash">
+            <h2>Applications Health Points</h2>
+            <p>The current state of services are as follows</p>
+            <!-- 2 Status/Row -->		
+            <div class="w3-row">
+               <div class="w3-col w3-container m6 l6 ">
+                  <div class="w3-panel w3-padding-16 w3-orange">
+                     <p>Service: A</p>
+                     <p>Status : Red</p>
+                  </div>
+               </div>
+               <div class="w3-col w3-container m6 l6 ">
+                  <div class="w3-panel w3-padding-16 w3-orange">
+                     <p>Service: B</p>
+                     <p>Status : Red</p>
+                  </div>
+               </div>
+            </div>
+            <div class="w3-row">
+               <div class="w3-col w3-container m6 l6 ">
+                  <div class="w3-panel w3-padding-16 w3-orange">
+                     <p>Service: C</p>
+                     <p>Status : Red</p>
+                  </div>
+               </div>
+               <div class="w3-col w3-container m6 l6">
+                  <div class="w3-panel w3-padding-16 w3-orange">
+                     <p>Service: D</p>
+                     <p>Status : Red</p>
+                  </div>
+               </div>
+            </div>
+            <br>
+            <button class="btnUpdate" class="w3-btn w3-padding-small w3-blue w3-right "  tabindex="" >Update Status</button> 
+         </div>
+         <div id="Infrastructure" class="w3-container dash" style="display:none">
+            <h2>Hosts Information</h2>
+            <p>The current state of infrastructure services are follows</p>
+            <div class="w3-row">
+               <div class="w3-col w3-container m6 l6 ">
+                  <div class="w3-panel w3-padding-16 w3-orange">
+                     <p>CPU: F</p>
+                     <p>Status : Red</p>
+                  </div>
+               </div>
+               <div class="w3-col w3-container m6 l6 ">
+                  <div class="w3-panel w3-padding-16 w3-orange">
+                     <p>Disk: G</p>
+                     <p>Status : Green</p>
+                  </div>
+               </div>
+            </div>
+            <br>
+            <button class="btnUpdate" class="w3-btn w3-padding-small w3-blue w3-right "  tabindex="" >Update Status</button> 
+         </div>
+         <div id="Logs" class="w3-container dash" style="display:none">
+            <h2>Logging Information</h2>
+            <p>The current state of logs are follows</p>
+            <div class="w3-row">
+               <div class="w3-col w3-container m6 l6 ">
+                  <div class="w3-panel w3-padding-16 w3-orange">
+                     <p>Jenkins</p>
+                     <p>Status : Red</p>
+                  </div>
+               </div>
+               <div class="w3-col w3-container m6 l6 ">
+                  <div class="w3-panel w3-padding-16 w3-orange">
+                     <p>Application Server: MicroService A</p>
+                     <p>Status : Green</p>
+                  </div>
+               </div>
+            </div>
+            <br>
+            <button class="btnUpdate" class="w3-btn w3-padding-small w3-blue w3-right "  tabindex="" >Update Status</button> 
+         </div>
+         <br>
+         <br>
+         <br>
+         <div class="w3-container w3-blue">
+            <h5>AIG Devops</h5>
+            <p>For support, or information on other services, please contact us on ..... </p>
+         </div>
+      </div>
+      <script>
+         function openTab(cityName) {
+             var i;
+             var x = document.getElementsByClassName("dash");
+             for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+             }
+             document.getElementById(cityName).style.display = "block";  
+         }
+      </script>
+   </body>
 </html>
