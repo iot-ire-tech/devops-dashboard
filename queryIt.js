@@ -1,7 +1,8 @@
-var urlRest="http://example.com/"
+var urlRest="https://jsonplaceholder.typicode.com"
+var nw = new ajaxUtil();
 
 $(document).ready(function () {
-	var endPointsArr=["/"];
+	var endPointsArr=["/users"];
 	
 	endPointsArr.forEach(function (ep) {
 
@@ -9,7 +10,7 @@ $(document).ready(function () {
 		var tmpObj = nw.setUrl(url).setMessage("Retrieving Status Information").getMe().getResult();
 	//	nw.setUrl(url).setMethod("post").setPayload(dataIn).setMessage("Posting New Authentication").sendMe().getStatus()
 		// Update cell status
-		$(".status").html("Good");
+		$(".status").html(tmpObj.name);
 		
 	});
 	
