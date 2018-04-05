@@ -26,27 +26,27 @@
 	<br>	
 	<br>	
 	<div class="w3-bar w3-blue">
-	  <button class="w3-bar-item w3-button" onclick="openCity('MirocService')">MirocService</button>
-	  <button class="w3-bar-item w3-button" onclick="openCity('OS')">OS</button>
-	  <button class="w3-bar-item w3-button" onclick="openCity('Logs')">Logs</button>
+	  <button class="w3-bar-item w3-button" onclick="openTab('MirocService')">MirocService</button>
+	  <button class="w3-bar-item w3-button" onclick="openTab('OS')">OS</button>
+	  <button class="w3-bar-item w3-button" onclick="openTab('Logs')">Logs</button>
 	</div>
 
 	<div id="MirocService" class="w3-container dash">
 	  <h2>Applications Health Points</h2>
 	  <p>The follows status are of health ......</p>
-	<button id="btnUpdate" class="w3-btn w3-padding-small w3-teal w3-right "  tabindex="" >Update Now</button> 
+	<button id="btnUpdate" class="w3-btn w3-padding-small w3-black w3-right "  tabindex="" >Update Now</button> 
 	</div>
 
 	<div id="OS" class="w3-container dash" style="display:none">
 	  <h2>Hosts</h2>
 	  <p>Host kpis.</p> 
-	<button id="btnUpdate" class="w3-btn w3-padding-small w3-teal w3-right "  tabindex="" >Update Now</button> 
+	<button id="btnUpdate" class="w3-btn w3-padding-small w3-black w3-right "  tabindex="" >Update Now</button> 
 	</div>
 
 	<div id="Logs" class="w3-container dash" style="display:none">
 	  <h2>Logs</h2>
 	  <p>critial errors</p>
-	<button id="btnUpdate" class="w3-btn w3-padding-small w3-teal w3-right "  tabindex="" >Update Now</button> 
+	<button id="btnUpdate" class="w3-btn w3-padding-small w3-black w3-right "  tabindex="" >Update Now</button> 
 	</div>
 				
 	
@@ -60,7 +60,7 @@
 			
 		
 <script>
-function openCity(cityName) {
+function openTab(cityName) {
     var i;
     var x = document.getElementsByClassName("dash");
     for (i = 0; i < x.length; i++) {
