@@ -30,3 +30,18 @@ var ajaxUtil = function () {
 		});
 		return this;
 };
+
+var html;
+function rowIt(box) {
+	html="<div class=\"w3-row\">";
+	html+="<div class=\"w3-col m1 w3-center w3-grey\">"+box+"</div>"
+	html+="</div>"
+}
+	
+function boxIt(cnt,color) {
+	html="<div class=\"w3-container w3-cell-middle w3-"+color+" w3-cell w3-mobile\">";
+  	html+="<p>"+cnt+"</p>"
+	html+="</div>"
+}
+	
+
